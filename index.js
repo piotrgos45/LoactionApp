@@ -14,6 +14,9 @@ buttonGetRaster.addEventListener('click', function () {
         let rasterMap = document.getElementById("mapToRaster");
         let rasterContext = rasterMap.getContext("2d");
 
+        rasterMap.width = 600;
+        rasterMap.height = 400;
+
         rasterContext.drawImage(canvas, 0, 0);
         alert("g");
     })
