@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 4</title>
+<!--    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"-->
+<!--          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="-->
+<!--          crossorigin=""/>-->
+<!--    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"-->
+<!--            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="-->
+<!--            crossorigin=""></script>-->
+<!--    <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-image/v0.0.4/leaflet-image.js'></script>-->
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
+</head>
+<body>
+
+    <div id="userCoords" hidden></div>
+
+    <div id="map" style="width: 600px; height: 400px; float: left;"></div>
+    <canvas id="mapToRaster" style="width: 600px; height: 400px;"></canvas>
+    <br>
+    <button id="getLocation" >Get Location</button>
+    <button id="getRaster">Get Raster</button>
+
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+
+    <script src="index.js"></script>
+</body>
+</html>
